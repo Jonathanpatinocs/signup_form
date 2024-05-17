@@ -83,9 +83,12 @@ input:focus {
     border-color: green;
     box-shadow: 3px 1px 2px darkolivegreen;
 }
-input:invalid {
+input:focus:invalid{
     border-color: red;
     box-shadow: 3px 1px 2px darksalmon;
+}
+input:invalid {
+    
 }
 
 label {
