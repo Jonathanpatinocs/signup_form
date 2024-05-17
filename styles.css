@@ -1,0 +1,122 @@
+@font-face {
+    font-family: norsebold;
+    src: url(images/Norse-Bold.otf);
+}
+:root {
+    --gray: rgba(234, 231, 231, 0.5);
+    --green: #596D48;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    min-width: 40%;
+    background-image:url(images/halie-west-25xggax4bSA-unsplash.jpg) ;
+    background-size: cover;
+    
+}
+#sidebar-logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 110px;
+    text-align: center;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: norsebold, sans-serif;
+    font-size: 30px;
+    gap: 10px;
+}
+#sidebar-logo img{
+    height: 100px;
+}
+.content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px
+    
+}
+#top {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 4;
+    padding: 5%;
+    font-size: clamp(10px, 20px, 50px);
+    background-color: var(--gray);
+}
+#top span {
+    font-style: italic;
+}
+#top p{
+    max-width: 600px;
+}
+#form {
+    flex: 1;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 2px 2px ;
+}
+#form h1 {
+    font-size: clamp(10px, 20px, 50px);
+}
+form {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+input {
+    width: 80%;
+    border-color: var(--gray);
+    border-style: solid;
+    
+}
+input:focus {
+    outline: none;
+    border-color: green;
+    box-shadow: 3px 1px 2px darkolivegreen;
+}
+input:invalid {
+    border-color: red;
+    box-shadow: 3px 1px 2px darksalmon;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+fieldset {
+    width: 100%;
+    padding: 0;
+    border: none;
+}
+fieldset p {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#bottom {
+    padding: 5%;
+    flex: 2;
+    background-color: var(--gray);
+}
+#bottom span {
+    color:var(--green)
+}
+#bottom button {
+    background-color: var(--green);
+    border-radius: 2px;
+    border-style: none;
+    padding: 10px;
+    width: 150px;
+    color: white;
+}
